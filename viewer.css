@@ -50,3 +50,9 @@ body {
     width: 40px;
     color: white;
 }
+.zoom-button:hover {
+    background-color: #323232;
+}
+.zoom-button:active {
+    background-color: #080808;
+}
