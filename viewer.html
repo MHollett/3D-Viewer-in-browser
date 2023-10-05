@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>3D Viewer</title>
+        <link rel="stylesheet" href="viewer.css">
+    </head>
+    <body>
+
+        <div id="container">
+
+            <div id="button-align">
+                <div class="button-container">
+                    <button type="button" id="zoom-in" class="zoom-button">+</button>
+                </div>
+                <div class="button-container">
+                    <button type="button" id="zoom-out" class="zoom-button">-</button>
+                </div>
+            </div>
+            
+            <div id="viewer-container">
+                <canvas id="viewer"></canvas>
+            </div>
+            
+        </div>
+        
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./libraries/three/build/three.module.js"
+                }
+            }
+        </script>
+
+        <script type="module" src="viewer.js"></script>
+    </body>
+</html>
